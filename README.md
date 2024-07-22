@@ -15,8 +15,6 @@ npm install react-native-serial-port-phmetro
 import { multiply } from 'react-native-serial-port-phmetro';
 
 // ...
-
-const result = await multiply(3, 7);
 ```
 
 
