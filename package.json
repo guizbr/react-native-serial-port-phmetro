@@ -1,6 +1,6 @@
 {
   "name": "react-native-serial-port-phmetro",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Biblioteca para capturar a leitura do aparelho pHmetro via porta serial usb",
   "source": "./src/index.tsx",
   "main": "./lib/commonjs/index.js",
