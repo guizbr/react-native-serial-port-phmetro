@@ -379,7 +379,10 @@ public class SerialPortPhmetroModule extends ReactContextBaseJavaModule {
         usbManager.requestPermission(device, permissionIntent);
         return;
       }
-      new ConnectionThread().start();
+
+      if (!serialPortConnected) {
+        new ConnectionThread().start();
+      }
     } catch (Exception err) {
       eventEmit(onErrorEvent, createError("Erro ao tentar começar a conexão", err.getMessage()));
     }
